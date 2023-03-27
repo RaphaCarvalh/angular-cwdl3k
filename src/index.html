@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>My app</title>
+  </head>
+  <body>
+    <section class="mt-5">
+      <div class="container">
+        <div class="card" >
+            <div class="card-block">
+                    <h4 class="card-title">Sign Up</h4>
+                <div class="cards">
+                    <form [formGroup]="f">
+                        <label for="">Insira seus dados para criar uma conta</label>
+                        <br>
+                        <br>
+
+                        <div class="form-group">
+                            <input formControlName="nome" type="text" class="form-control" id="exampleInputEmail1" 
+                            placeholder="Nome">         
+                      
+                        <br>
+                            <input formControlName="empresa" type="text" class="form-control" id="exampleInputEmail1" 
+                            placeholder="Empresa" >            
+                        
+                        <br>
+                            
+                            <input formControlName="cnpj" type="text" class="form-control" id="exampleInputEmail1" 
+                            placeholder="CNPJ">                           
+                               
+                        <br>
+                            <input formControlName="email" type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    
+                        </div>
+                        <div class="password">
+                          <label for="exampleInputPassword1"></label>
+
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" 
+                          [class.form-control-danger]="f.get('password').hasError('required') && f.get('password').touched"
+                          placeholder="Senha" [(ngModel)]="data.password">
+                        </div> 
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead class="thead-light text-center">
+              <tr>
+                <th>Nome</th>
+                <th>empresa</th>
+                <th class="w-20">cnpj</th>
+                <th class="w-20">E-mail</th>
+                <th class="w-20">id</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td class="text-center w-25">{{user.nome}}</td>
+                <td>{{user.empresa}}</td>
+                <td>{{user.cnpj}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.id}}</td>
+                <td>{{user.email}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button  type="submit" class="btn btn-primary" (click)="criarUser()">Criar Conta</button>
+          <button  type="submit" class="btn btn-primary" (click)="listarUsers()">atualizar</button>
+
+              <tr *ngFor="let email of emails">
+                <td>
+              <button type="submit" class="btn btn-primary" (click)="deletaEmail(email)">excluir</button>
+
+            </td>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

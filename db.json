@@ -1,0 +1,72 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "idcontrole": "1",
+      "nome": "a",
+      "empresa": "b",
+      "email": "a",
+      "cnpj": "b",
+      "senha": "123"
+    },
+    {
+      "nome": null,
+      "empresa": null,
+      "cnpj": null,
+      "email": null,
+      "password": null,
+      "repassword": null,
+      "id": 2
+    },
+    {
+      "nome": "devone.r8",
+      "empresa": "com",
+      "cnpj": "123333333333333333",
+      "email": "devone.r8@gmail.com",
+      "password": "12345678",
+      "repassword": "12345678",
+      "id": 3
+    },
+    {
+      "nome": "devone.",
+      "empresa": "r8",
+      "cnpj": "12345678912345",
+      "email": "usfrtrio@email.com",
+      "password": "12345678",
+      "repassword": "12345678",
+      "id": 4
+    },
+    {
+      "nome": "asd",
+      "empresa": "asas",
+      "cnpj": "12345678912345",
+      "email": "usuario@email.com",
+      "password": "12345678",
+      "repassword": "12345678",
+      "id": 5
+    }
+  ],
+  "modelos": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "colecao": 1
+    },
+    {
+      "id": 2,
+      "nome": "Modelo 2",
+      "colecao": 1
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção 1"
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2"
+    }
+  ],
+  "email": []
+}
